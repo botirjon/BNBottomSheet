@@ -19,7 +19,7 @@ public protocol BNBottomSheetDataSource {
 
 public extension BNBottomSheetDelegate {
     func numberOfSections(in bottomSheetController: BNBottomSheetController) -> Int {
-        return 0
+        return 1
     }
     
     func bottomSheetController(_ controller: BNBottomSheetController, numberOfItemsInSection section: Int) -> Int {
