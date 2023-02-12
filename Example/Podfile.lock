@@ -1,0 +1,27 @@
+PODS:
+  - BNBottomSheet (0.1.0)
+  - Nimble (10.0.0)
+  - Quick (2.2.1)
+
+DEPENDENCIES:
+  - BNBottomSheet (from `../`)
+  - Nimble (~> 10.0.0)
+  - Quick (~> 2.2.0)
+
+SPEC REPOS:
+  trunk:
+    - Nimble
+    - Quick
+
+EXTERNAL SOURCES:
+  BNBottomSheet:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  BNBottomSheet: 3ab2203f14b8cdea625af1380ccc47f414f14f83
+  Nimble: 5316ef81a170ce87baf72dd961f22f89a602ff84
+  Quick: f5754d69b7013f5864c29aab9ae6f0c79c5bc200
+
+PODFILE CHECKSUM: 60815f61fbe145d0095e98fe9370d4dd5e8a0514
+
+COCOAPODS: 1.11.3

@@ -1,0 +1,6 @@
+framework module BNBottomSheet {
+  umbrella header "BNBottomSheet-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "BNBottomSheet",
+  "version": "0.1.0",
+  "summary": "A short description of BNBottomSheet.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/botirjon/BNBottomSheet",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "botirjon": "botirjon.nasridinov@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/botirjon/BNBottomSheet.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "BNBottomSheet/Classes/**/*"
+}
