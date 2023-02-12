@@ -28,6 +28,8 @@ internal protocol BNBottomSheetViewInstaller: ViewInstaller {
     
     var tableViewNormalHeight: CGFloat { get set }
     var bottomPatchOffset: CGFloat { get set }
+    
+    var styles: BNBottomSheetController.Styles { get }
 }
 
 internal extension BNBottomSheetViewInstaller {
@@ -49,7 +51,7 @@ internal extension BNBottomSheetViewInstaller {
         
         //
         overlayView = UIView.init()
-        overlayView.backgroundColor = UIColor.black.withAlphaComponent(0.54)
+        overlayView.backgroundColor = styles.dragIndicatorColor
         overlayView.translatesAutoresizingMaskIntoConstraints = false
         overlayView.isUserInteractionEnabled = true
         pan = UIPanGestureRecognizer.init(target: dragTarget, action: dragHandler)
@@ -68,7 +70,7 @@ internal extension BNBottomSheetViewInstaller {
         //
         contentBackgroundView = UIView.init()
         
-        contentBackgroundView.backgroundColor = .white
+        contentBackgroundView.backgroundColor = styles.contentBackgroundColor
         contentBackgroundView.layer.cornerRadius = 16
         contentBackgroundView.clipsToBounds = true
         contentBackgroundView.translatesAutoresizingMaskIntoConstraints = false

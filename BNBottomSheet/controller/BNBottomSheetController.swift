@@ -12,6 +12,17 @@ import UIKit
 
 public class BNBottomSheetController: UIViewController, BNBottomSheetViewInstaller {
     
+    public struct Styles {
+        public var contentBackgroundColor: UIColor = .white
+        public var dragIndicatorColor: UIColor = UIColor.black.withAlphaComponent(0.54)
+        
+        public init(contentBackgroundColor: UIColor = .white, dragIndicatorColor: UIColor = UIColor.black.withAlphaComponent(0.54)) {
+            self.contentBackgroundColor = contentBackgroundColor
+            self.dragIndicatorColor = dragIndicatorColor
+        }
+        
+    }
+    
     var tableViewPan: UIPanGestureRecognizer!
     
     // subviews
@@ -38,6 +49,13 @@ public class BNBottomSheetController: UIViewController, BNBottomSheetViewInstall
     
     var mainView: UIView { view }
 
+    public var styles: Styles = .init() {
+        didSet {
+            contentBackgroundView.backgroundColor = styles.contentBackgroundColor
+            dragIndicator.backgroundColor = styles.dragIndicatorColor
+        }
+    }
+    
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         _init()
@@ -46,6 +64,24 @@ public class BNBottomSheetController: UIViewController, BNBottomSheetViewInstall
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         _init()
+    }
+    
+    public override var modalPresentationStyle: UIModalPresentationStyle {
+        set {
+            super.modalPresentationStyle = .overFullScreen
+        }
+        get {
+            super.modalPresentationStyle
+        }
+    }
+    
+    public override var modalTransitionStyle: UIModalTransitionStyle {
+        set {
+            super.modalTransitionStyle = .crossDissolve
+        }
+        get {
+            super.modalTransitionStyle
+        }
     }
     
     private func _init() {
