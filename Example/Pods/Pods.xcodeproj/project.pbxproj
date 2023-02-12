@@ -237,7 +237,7 @@
 		762EBC5F74C0131A7CFB3173DEC4D053 /* QuickConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuickConfiguration.swift; path = Sources/Quick/Configuration/QuickConfiguration.swift; sourceTree = "<group>"; };
 		783E60EB385137A4264979E14300457A /* Pods-BNBottomSheet_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BNBottomSheet_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		79A0AA2B4C42AC735A9C6DBF55E6B309 /* DSL+Wait.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DSL+Wait.swift"; path = "Sources/Nimble/DSL+Wait.swift"; sourceTree = "<group>"; };
-		7BEEBEA38E0D8B050380F9A9A5BBC7E5 /* BNBottomSheet */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BNBottomSheet; path = BNBottomSheet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BEEBEA38E0D8B050380F9A9A5BBC7E5 /* BNBottomSheet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BNBottomSheet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E80F95BEE7D5E81B59E1AC10271A246 /* QuickSpecBase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QuickSpecBase.m; path = Sources/QuickObjCRuntime/QuickSpecBase.m; sourceTree = "<group>"; };
 		7EDBD9B9F36F7CD0FD15DE718212303D /* ContainElementSatisfying.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContainElementSatisfying.swift; path = Sources/Nimble/Matchers/ContainElementSatisfying.swift; sourceTree = "<group>"; };
 		8087DE45015B71D2B06EA4510AE5CF6A /* Expectation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expectation.swift; path = Sources/Nimble/Expectation.swift; sourceTree = "<group>"; };
@@ -496,7 +496,7 @@
 		BDBEE27465E9E42DC1EB97838E38BCCA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7BEEBEA38E0D8B050380F9A9A5BBC7E5 /* BNBottomSheet */,
+				7BEEBEA38E0D8B050380F9A9A5BBC7E5 /* BNBottomSheet.framework */,
 				BAE263041362D074978BB3B577DF0A05 /* Nimble */,
 				D6E471DA3E7B8AEBFC68C7C7B2D7301C /* Pods-BNBottomSheet_Example */,
 				E42C6E8E9EF061A5D272FB15AF673EEA /* Pods-BNBottomSheet_Tests */,
@@ -748,7 +748,7 @@
 			);
 			name = BNBottomSheet;
 			productName = BNBottomSheet;
-			productReference = 7BEEBEA38E0D8B050380F9A9A5BBC7E5 /* BNBottomSheet */;
+			productReference = 7BEEBEA38E0D8B050380F9A9A5BBC7E5 /* BNBottomSheet.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		6F13695E06195A78EA8A95F8C7ED0D2F /* Nimble */ = {
@@ -1113,7 +1113,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/BNBottomSheet/BNBottomSheet-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/BNBottomSheet/BNBottomSheet-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/BNBottomSheet/BNBottomSheet.modulemap";
 				PRODUCT_MODULE_NAME = BNBottomSheet;
@@ -1121,7 +1121,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1365,7 +1365,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/BNBottomSheet/BNBottomSheet-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/BNBottomSheet/BNBottomSheet-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/BNBottomSheet/BNBottomSheet.modulemap";
 				PRODUCT_MODULE_NAME = BNBottomSheet;
@@ -1373,7 +1373,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
