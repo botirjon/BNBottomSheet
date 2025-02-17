@@ -30,7 +30,7 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '11.0'
 
-  s.source_files = 'BNBottomSheet/Classes/**/*'
+  s.source_files = 'Sources/BNBottomSheet/**/*'
   
   # s.resource_bundles = {
   #   'BNBottomSheet' => ['BNBottomSheet/Assets/*.png']
